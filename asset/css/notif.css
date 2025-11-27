@@ -1,0 +1,31 @@
+.notif {
+  width: 450px;
+  z-index: 999999999;
+  border: 1px solid rgb(173, 173, 173);
+  background-color: #36d27c;
+  height: 70px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.notif.active {
+  transform: translateY(20%);
+  opacity: 1;
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  -o-transform: translateY(20%);
+}

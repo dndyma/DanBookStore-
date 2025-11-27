@@ -1,0 +1,230 @@
+/* Main */
+main {
+  color: #1a3a31;
+  width: 85%;
+  margin: 40px auto 90px auto;
+}
+/* .parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+} */
+
+/* .main-left {
+  g.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+}
+
+.main-list .card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 13px;
+  border: 1px solid #f6f6f6;
+  transition: transform 0.3s ease-in;
+  overflow: hidden;
+}
+
+.main-list .card:hover {
+  transform: scale(1.1);
+}
+
+.main-list .card .title {
+  font-weight: bold;
+  padding: 10px 10px 3px 10px;
+  text-align: center;
+}
+
+.main-list .card .genre {
+  text-align: center;
+  font-size: small;
+  color: #adadb7;
+  padding: 3px 10px 10px 10px;
+}
+
+.main-list .card .card-cover {
+  width: 100%;
+  position: relative;
+}
+
+.main-list .card .card-cover .cover {
+  border-radius: 13px;
+  width: 200px;
+  height: 280px;
+}
+.main-list .card .siKlik {
+  opacity: 80%;
+}
+.main-list .card .siKlik.active {
+  opacity: 100%;
+}
+.main-list .card .saved {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 7px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.main-right .main-sort {
+  color: #1a3a31;
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #f6f6f6;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.main-right .main-sort .main-sort-list button {
+  background-color: white;
+  color: #d3d3d3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-right .main-sort .main-sort-list {
+  display: flex;
+  gap: 20px;
+}
+
+.main-right .main-sort .main-sort-list .active {
+  color: #1a3a31;
+}
+ .main-right {
+  grid-column: 4 / -1;
+} */
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.main-list .card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 13px;
+  border: 1px solid #f6f6f6;
+  transition: transform 0.3s ease-in;
+  z-index: 999;
+}
+
+.main-list .card .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 99;
+  height: 24px;
+  width: 24px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #ff754c;
+  border-radius: 100%;
+  color: white;
+}
+
+.main-list .card:hover {
+  transform: scale(1.1);
+}
+
+.main-list .card .title {
+  font-weight: bold;
+  padding: 10px 10px 3px 10px;
+  text-align: center;
+}
+
+.main-list .card .genre {
+  text-align: center;
+  font-size: small;
+  color: #adadb7;
+  padding: 3px 10px 10px 10px;
+}
+
+.main-list .card .card-cover {
+  width: 100%;
+  position: relative;
+}
+
+.main-list .card .card-cover .cover {
+  border-radius: 13px;
+  width: 200px;
+  height: 280px;
+}
+.main-list .card .siKlik {
+  opacity: 50%;
+}
+.main-list .card .siKlik.active {
+  opacity: 100%;
+}
+.main-list .card .saved {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 7px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.main-right .main-sort {
+  color: #1a3a31;
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #f6f6f6;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.main-right .main-sort .main-sort-list button {
+  background-color: white;
+  color: #d3d3d3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-right .main-sort .main-sort-list {
+  display: flex;
+  gap: 20px;
+}
+
+.main-right .main-sort .main-sort-list .active {
+  color: #1a3a31;
+}
+
+.main-right h2 {
+  font-size: medium;
+  padding: 5px 20px;
+  display: inline-block;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--primary);
+}
+@media (min-width: 150px) and (max-width: 1024px) {
+  .main-list {
+    justify-content: center;
+  }
+}

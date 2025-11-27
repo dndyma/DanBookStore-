@@ -1,0 +1,124 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  background-color: #1a3a31;
+}
+
+footer .footer-bg {
+  margin: 0 auto;
+  padding: 15px;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+}
+
+footer .footer-bg h1 {
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+footer .footer-bg .footer-list {
+  width: 100%;
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+footer .footer-bg .footer-list .footer-alamat h4 {
+  margin-bottom: 13px;
+}
+
+footer .footer-bg .footer-list .footer-alamat {
+  width: 220px;
+}
+footer .footer-bg .footer-list .footer-staff ul li {
+  list-style: none;
+}
+footer .footer-bg .footer-list .footer-staff {
+  width: 320px;
+}
+footer .footer-bg .footer-list .footer-staff h4 {
+  margin-bottom: 13px;
+}
+
+footer .footer-bg .footer-list .footer-bug h4 {
+  margin-bottom: 10px;
+}
+
+footer .footer-bg .footer-list .footer-bug input {
+  padding: 5px;
+  margin-top: 7px;
+  border-radius: 3px;
+}
+footer .footer-bg .footer-list .footer-bug button {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+footer .footer-bg .footer-list .footer-bug h5 {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+}
+footer .footer-bg .footer-list .footer-bug ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .footer-bg .footer-list .footer-bug ul a img {
+  opacity: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+footer .footer-bg .footer-list .footer-bug ul a img:hover {
+  opacity: 100%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  footer {
+    height: auto;
+  }
+  footer .footer-bg .footer-list .footer-staff {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .footer-bg {
+    width: 85%;
+    height: 100%;
+  }
+  footer .footer-bg .footer-list .footer-alamat {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .footer-bg .footer-list .footer-bug {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  footer .footer-bg .footer-list .footer-bug input {
+    width: 100%;
+  }
+  footer .footer-bg .footer-list .footer-bug button {
+    width: 100%;
+  }
+
+  footer .footer-bg .footer-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 15px;
+    gap: 20px;
+  }
+}

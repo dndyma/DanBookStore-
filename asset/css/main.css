@@ -1,0 +1,18 @@
+:root {
+  --primary: #00bf63;
+  --secondary: #333;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter";
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("http://localhost/asset/font/font.ttf") format("truetype");
+  font-weight: normal; /* Default weight, misalnya 400 */
+}

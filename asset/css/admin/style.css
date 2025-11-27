@@ -1,0 +1,371 @@
+/* Navbar */
+
+:root {
+  --siKeren: #96f5aa;
+  --siIjo: #1a3a31;
+  --siabu: #f9f9f9;
+  --siKolorIjo: #00bf63;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--siabu);
+  justify-content: space-between;
+  display: flex;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  height: auto;
+  width: 270px;
+}
+
+nav .avatar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .avatar .avatar-img {
+  padding: 10px;
+  background: rgb(0, 204, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 204, 142, 1) 0%,
+    rgba(151, 245, 170, 1) 100%
+  );
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+nav .avatar .avatar-title h4 {
+  color: var(--siIjo);
+  font-weight: bolder;
+}
+
+nav .avatar .avatar-title p {
+  color: #333;
+  opacity: 70%;
+  font-size: small;
+}
+
+nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav .nav-list button {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--siIjo);
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.5s ease-in, transform 0.5s ease-in-out;
+}
+
+nav .nav-list button.active {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--siIjo);
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 100%;
+  background: rgb(4, 192, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 192, 101, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.5s ease-in, transform 0.5s ease-in-out;
+}
+
+nav .nav-list button:hover {
+  background: rgb(4, 192, 101);
+  transform: scale(1.1);
+}
+
+nav .nav-list button .title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav .nav-list button img {
+  width: 30px;
+}
+
+nav .nav-ilustration {
+  background: rgb(0, 204, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 204, 142, 1) 0%,
+    rgba(151, 245, 170, 1) 100%
+  );
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+nav .nav-ilustration img {
+  height: 150px;
+  margin: 0 auto;
+}
+nav .nav-ilustration p {
+  font-weight: bold;
+  color: white;
+}
+
+/* Main */
+
+main {
+  color: var(--siIjo);
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .main-start h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+main .main-start .input-search {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+main .main-start .input-search img {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+}
+main .main-start .input-search input {
+  padding: 10px;
+  color: var(--siIjo);
+  padding-left: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+main .main-start .input-search input:focus {
+  outline: 1px solid var(--siKolorIjo);
+}
+
+main .main-hero {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+  border-radius: 13px;
+  background: rgb(0, 204, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 204, 142, 1) 0%,
+    rgba(151, 245, 170, 1) 100%
+  );
+  display: flex;
+}
+
+main .main-hero .main-title {
+  width: 50%;
+}
+
+main .main-hero .main-title .title {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+main .main-hero .main-title .title .p1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+main .main-hero .main-title .title .p2 {
+  font-size: small;
+  color: #333;
+}
+main .main-hero .main-title .title .btn-tambah {
+  width: 35%;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+  background-color: var(--siIjo);
+  border: none;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in-out;
+}
+main .main-hero .main-title .title .btn-tambah:hover {
+  opacity: 90%;
+  transform: scale(1.1);
+}
+
+main .main-hero .main-title .title .btn-tambah {
+  position: relative;
+}
+main .main-hero .main-title .title .btn-tambah img {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 11px;
+  position: absolute;
+  z-index: 99;
+}
+main .main-hero .main-title .title .btn-tambah p {
+  padding-left: 11px;
+}
+main .main-hero .hero {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-hero .hero img {
+  width: 300px;
+  height: 300px;
+}
+
+main .main-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .main-table table th {
+  font-weight: bold;
+  padding: 10px;
+  background-color: var(--siIjo);
+  border: 1px solid var(--siIjo);
+  border-collapse: collapse;
+  color: white;
+}
+
+main .main-table table td {
+  text-align: center;
+  border: 1px solid var(--siIjo);
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+main .main-table h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+main .main-table table td .btn-update img {
+  width: 40px;
+  height: 30px;
+}
+main .main-table table td .btn-update {
+  justify-content: center;
+  border-radius: 7px;
+  border: none;
+  background: rgb(241, 202, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 202, 1, 1) 0%,
+    rgba(226, 174, 16, 1) 100%
+  );
+  cursor: pointer;
+}
+
+main .main-table table td .btn-detail img {
+  width: 40px;
+  height: 30px;
+}
+main .main-table table td .btn-detail {
+  justify-content: center;
+  border-radius: 7px;
+  border: none;
+  background: rgb(4, 192, 101);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 192, 101, 1) 0%,
+    rgba(0, 139, 72, 1) 100%
+  );
+  cursor: pointer;
+}
+
+main .main-table table td .btn-detail:hover {
+  background: rgb(4, 192, 101);
+  background: linear-gradient(0deg, rgba(4, 192, 101, 1) 100%);
+}
+
+main .main-table table td .btn-update:hover {
+  background: rgb(241, 202, 1);
+  background: linear-gradient(0deg, rgba(226, 174, 16, 1) 100%);
+}
+
+main .main-table table td .btn-delete img {
+  width: 40px;
+  height: 30px;
+}
+main .main-table table td .btn-delete {
+  justify-content: center;
+  border-radius: 7px;
+  border: none;
+  background: rgb(241, 1, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 1, 1, 1) 0%,
+    rgba(226, 16, 16, 1) 100%
+  );
+  cursor: pointer;
+}
+main .main-table table td .btn-delete:hover {
+  background: rgb(241, 1, 1);
+  background: linear-gradient(0deg, rgba(241, 1, 1, 1) 100%);
+}
+.khusus {
+  display: none;
+}
+@media (min-width: 150px) and (max-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  .khusus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  main,
+  nav {
+    display: none;
+  }
+}

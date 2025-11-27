@@ -1,0 +1,128 @@
+button,
+input {
+  border: none;
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+/* Bagian Navbar */
+header {
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+}
+nav {
+  width: 84%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+nav .nav-start {
+  gap: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-start a {
+  padding-top: 2px;
+  line-height: 18px;
+  font-size: 20px;
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 70px;
+}
+nav .nav-start a span {
+  color: #adadb7;
+  font-size: small;
+  font-weight: normal;
+}
+
+nav .nav-mid {
+  width: 60%;
+  padding: 3px;
+  border: 1px solid #e8e8e8;
+  display: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav .nav-mid button {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+nav .nav-mid button:hover {
+  opacity: 80%;
+}
+
+nav .nav-mid input {
+  width: 100%;
+  padding-left: 5px;
+  outline: none;
+}
+
+nav .nav-mid .btn-left {
+  padding: 5px 15px;
+  height: 100%;
+  border-right: 1px solid #e8e8e8;
+}
+
+nav .nav-mid .btn-left h5 {
+  font-size: small;
+  color: var(--primary);
+}
+
+nav .nav-mid .btn-right {
+  padding: 5px 15px;
+  height: 100%;
+  border-left: 1px solid #e8e8e8;
+}
+
+nav .nav-end {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+nav .nav-end .btn-login {
+  cursor: pointer;
+  background-color: #f2f0fe;
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav .nav-end .btn-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background-color: var(--primary);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

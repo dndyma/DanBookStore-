@@ -1,0 +1,348 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button,
+input {
+  border: none;
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+/* Bagian Navbar */
+
+header {
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+nav {
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+.nav-sidebar {
+  display: none;
+}
+
+nav .nav-start {
+  gap: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-start a {
+  line-height: 18px;
+  font-size: 20px;
+  color: #1a3a31;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 70px;
+}
+nav .nav-start a span {
+  color: #adadb7;
+  font-size: small;
+  font-weight: normal;
+}
+
+nav .nav-mid {
+  width: 60%;
+  padding: 3px;
+  height: 100%;
+  border: 1px solid #f6f6f6;
+  display: flex;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav .nav-mid button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: white;
+}
+
+nav .nav-mid input {
+  color: #1a3a31;
+  font-size: 17px;
+  width: 100%;
+  padding-left: 5px;
+  outline: none;
+}
+
+nav .nav-mid .btn-left {
+  position: relative;
+  padding: 5px 15px;
+  height: 100%;
+  border-right: 1px solid #e8e8e8;
+}
+
+nav .nav-mid .btn-left h5 {
+  font-size: small;
+  color: var(--primary);
+}
+
+nav .nav-mid .btn-right {
+  padding: 5px 15px;
+  height: 100%;
+  border-left: 1px solid #e8e8e8;
+}
+
+nav .nav-end {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav .nav-end a {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+
+nav .nav-end a:hover {
+  opacity: 80%;
+}
+
+nav .nav-end a .badge {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #ff754c;
+  display: flex;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  color: white;
+  height: 20px;
+  top: -3px;
+  right: -10px;
+}
+
+nav .nav-end .avatar {
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  color: #818181;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #f6f6f6;
+  cursor: pointer;
+}
+
+nav .nav-end .avatar:hover {
+  opacity: 80%;
+}
+
+.menu {
+  display: none;
+  transition: hover 0.5s ease-in-out;
+}
+
+.menu.active {
+  width: 175px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  background-color: var(--primary);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  top: 40px;
+  left: 0;
+  z-index: 9999;
+}
+
+.menu a {
+  font-weight: bold;
+  color: white;
+}
+.menu a {
+  font-weight: bold;
+  color: white;
+}
+
+.menu a:hover {
+  opacity: 80%;
+}
+
+@media (min-width: 150px) and (max-width: 1024px) {
+  body {
+    position: relative;
+  }
+  nav .nav-end {
+    display: none;
+  }
+  nav .nav-mid {
+    display: none;
+  }
+  nav .nav-hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav .nav-hamburger .line {
+    width: 30px;
+    background-color: black;
+    height: 2px;
+    transition: transform 0.3s ease-in;
+  }
+  .garis1.active1 {
+    transform: rotate(45deg) translateY(10px) translateX(7px);
+    background-color: red;
+  }
+
+  .garis2.active {
+    opacity: 0;
+  }
+
+  .garis3.active2 {
+    transform: rotate(-45deg) translateY(-10px) translateX(7px);
+    background-color: blue;
+  }
+  .nav-sidebar.active {
+    display: flex;
+  }
+  .nav-sidebar {
+    gap: 10px;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999899;
+  }
+  .nav-sidebar .nav-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-sidebar .nav-mid .btn-left {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: #1a3a31;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #97f5aa;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+  .nav-sidebar .nav-mid .btn-left .menu.active {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    background-color: var(--primary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    top: 40px;
+    left: 0;
+    z-index: 9999;
+  }
+
+  .nav-sidebar .nav-mid .input-search {
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid #f6f6f6;
+  }
+  .nav-sidebar .nav-mid .input-search .btn-right {
+    background-color: white;
+  }
+  .nav-sidebar .nav-mid .input-search .btn-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .nav-sidebar .nav-mid .input-search input {
+    color: #1a3a31;
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f6f6f6;
+  }
+  .nav-sidebar .nav-end {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav-sidebar .nav-end a {
+    position: relative;
+    border: 1px solid #f6f6f6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-sidebar .nav-end a img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-sidebar .nav-end .avatar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+  }
+  .nav-sidebar .nav-end a .badge {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #ff754c;
+    display: flex;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    color: white;
+    height: 20px;
+    top: -3px;
+    right: -10px;
+  }
+}
